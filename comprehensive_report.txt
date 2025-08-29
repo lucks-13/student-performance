@@ -1,0 +1,61 @@
+STUDENT PERFORMANCE PREDICTION - COMPREHENSIVE REPORT
+============================================================
+
+1. DATASET INFORMATION
+-------------------------
+Total Samples: 1044
+Number of Features: 70
+Training Samples: 835
+Test Samples: 209
+Target Variable: G3
+Target Mean: 11.34
+Target Std Dev: 3.83
+
+2. MODEL PERFORMANCE SUMMARY
+------------------------------
+                  best_cv_score  test_mae   test_r2  test_rmse  test_mape  max_error   Test_R2  Test_RMSE  Test_MAE
+Model                                                                                                              
+VotingRegressor             NaN       NaN       NaN        NaN        NaN        NaN  0.844742   1.571272  0.906082
+StackedEnsemble             NaN       NaN       NaN        NaN        NaN        NaN  0.834841   1.620601  0.918788
+LinearRegression       0.839298  1.041791  0.828411   1.651844  11.903721   8.978217       NaN        NaN       NaN
+Ridge                  0.845521  1.019511  0.830567   1.641437  11.602803   8.891420       NaN        NaN       NaN
+Lasso                  0.847856  1.004359  0.831919   1.634875  11.382704   8.867884       NaN        NaN       NaN
+ElasticNet             0.847520  1.007259  0.831328   1.637745  11.418742   8.865426       NaN        NaN       NaN
+DecisionTree           0.840755  0.913623  0.827773   1.654916  11.524086   9.969231       NaN        NaN       NaN
+RandomForest           0.847570  0.932100  0.835326   1.618218  11.819427  10.110251       NaN        NaN       NaN
+GradientBoosting       0.863006  0.901708  0.847696   1.556253  11.242417   9.175624       NaN        NaN       NaN
+AdaBoost               0.834956  1.120347  0.787063   1.840140  13.460212  11.062069       NaN        NaN       NaN
+SVR                    0.837266  0.958551  0.807293   1.750546  10.746672  10.099863       NaN        NaN       NaN
+KNN                    0.682670  1.508872  0.645016   2.375905  16.006224  11.958821       NaN        NaN       NaN
+MLP                    0.832342  1.063062  0.825939   1.663701  12.361797   9.435211       NaN        NaN       NaN
+WeightedEnsemble            NaN       NaN       NaN        NaN        NaN        NaN       NaN        NaN       NaN
+
+Best Performing Model: VotingRegressor
+  Test R²: 0.8447
+  Test RMSE: 1.5713
+  Test MAE: 0.9061
+
+3. KEY BUSINESS INSIGHTS (Based on Analysis)
+----------------------------------------
+1. Previous grades (G1, G2) show strong correlation with final grades (G3): 0.809, 0.911
+2. Students with higher study time perform better: {1: 10.580441640378549, 2: 11.335984095427435, 3: 12.493827160493828, 4: 12.274193548387096}
+3. Past failures significantly impact performance: {0: 12.05458768873403, 1: 8.425, 2: 7.484848484848484, 3: 6.8}
+4. Family support shows positive correlation: {'no': 11.277227722772277, 'yes': 11.3828125}
+5. Parent education level correlates with student performance: 0.200
+
+4. RISK FACTOR IDENTIFICATION
+------------------------------
+Characteristics of Low-Performing Students (G3 < 10):
+- failures: 0.717391304347826
+- absences: 5.826086956521739
+- studytime: 1.8
+- famsup: {'yes': 0.6173913043478261, 'no': 0.3826086956521739}
+- schoolsup: {'no': 0.8652173913043478, 'yes': 0.13478260869565217}
+
+5. DEPLOYMENT CONSIDERATIONS
+------------------------------
+• Model Accuracy: 84.5% of variance explained
+• Prediction Error: Average error of ±1.57 grade points
+
+============================================================
+REPORT END

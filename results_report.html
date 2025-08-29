@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 10px; }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .highlight { background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #3498db; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .best-model { background-color: #2ecc71; color: white; }
+        .metric { display: inline-block; margin: 10px 15px; padding: 10px; background-color: #ecf0f1; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Prediction Results</h1>
+
+        <div class="highlight">
+            <strong>Best Model:</strong> VotingRegressor<br>
+            <strong>Best R² Score:</strong> 0.8447<br>
+            <strong>Best RMSE:</strong> 1.5713
+        </div>
+
+        <h2>Dataset Overview</h2>
+        <div class="metric">Total Samples: 1044</div>
+        <div class="metric">Features: 70</div>
+        <div class="metric">Training: 835</div>
+        <div class="metric">Testing: 209</div>
+        <div class="metric">Target Mean: 11.34</div>
+        <div class="metric">Target Std: 3.86</div>
+
+        <h2>Model Performance Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Model</th>
+                    <th>R² Score</th>
+                    <th>RMSE</th>
+                    <th>CV R² Score</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="">
+                    <td>1</td>
+                    <td>GradientBoosting</td>
+                    <td>0.8477</td>
+                    <td>1.5563</td>
+                    <td>0.8630</td>
+                </tr>
+    
+                <tr class="">
+                    <td>2</td>
+                    <td>RandomForest</td>
+                    <td>0.8353</td>
+                    <td>1.6182</td>
+                    <td>0.8476</td>
+                </tr>
+    
+                <tr class="">
+                    <td>3</td>
+                    <td>Lasso</td>
+                    <td>0.8319</td>
+                    <td>1.6349</td>
+                    <td>0.8479</td>
+                </tr>
+    
+                <tr class="">
+                    <td>4</td>
+                    <td>ElasticNet</td>
+                    <td>0.8313</td>
+                    <td>1.6377</td>
+                    <td>0.8475</td>
+                </tr>
+    
+                <tr class="">
+                    <td>5</td>
+                    <td>Ridge</td>
+                    <td>0.8306</td>
+                    <td>1.6414</td>
+                    <td>0.8455</td>
+                </tr>
+    
+                <tr class="">
+                    <td>6</td>
+                    <td>LinearRegression</td>
+                    <td>0.8284</td>
+                    <td>1.6518</td>
+                    <td>0.8393</td>
+                </tr>
+    
+                <tr class="">
+                    <td>7</td>
+                    <td>DecisionTree</td>
+                    <td>0.8278</td>
+                    <td>1.6549</td>
+                    <td>0.8408</td>
+                </tr>
+    
+                <tr class="">
+                    <td>8</td>
+                    <td>MLP</td>
+                    <td>0.8259</td>
+                    <td>1.6637</td>
+                    <td>0.8323</td>
+                </tr>
+    
+                <tr class="">
+                    <td>9</td>
+                    <td>SVR</td>
+                    <td>0.8073</td>
+                    <td>1.7505</td>
+                    <td>0.8373</td>
+                </tr>
+    
+                <tr class="">
+                    <td>10</td>
+                    <td>AdaBoost</td>
+                    <td>0.7871</td>
+                    <td>1.8401</td>
+                    <td>0.8350</td>
+                </tr>
+    
+                <tr class="">
+                    <td>11</td>
+                    <td>KNN</td>
+                    <td>0.6450</td>
+                    <td>2.3759</td>
+                    <td>0.6827</td>
+                </tr>
+    
+            </tbody>
+        </table>
+
+        <h2>Prediction vs Actual (Sample)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sample</th>
+                    <th>Actual</th>
+                    <th>Predicted</th>
+                    <th>Residual</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>8.00</td>
+                    <td>9.47</td>
+                    <td>-1.47</td>
+                </tr>
+    
+                <tr>
+                    <td>2</td>
+                    <td>13.00</td>
+                    <td>12.44</td>
+                    <td>0.56</td>
+                </tr>
+    
+                <tr>
+                    <td>3</td>
+                    <td>11.00</td>
+                    <td>11.25</td>
+                    <td>-0.25</td>
+                </tr>
+    
+                <tr>
+                    <td>4</td>
+                    <td>18.00</td>
+                    <td>18.00</td>
+                    <td>0.00</td>
+                </tr>
+    
+                <tr>
+                    <td>5</td>
+                    <td>8.00</td>
+                    <td>2.72</td>
+                    <td>5.28</td>
+                </tr>
+    
+                <tr>
+                    <td>6</td>
+                    <td>17.00</td>
+                    <td>16.14</td>
+                    <td>0.86</td>
+                </tr>
+    
+                <tr>
+                    <td>7</td>
+                    <td>15.00</td>
+                    <td>15.31</td>
+                    <td>-0.31</td>
+                </tr>
+    
+                <tr>
+                    <td>8</td>
+                    <td>10.00</td>
+                    <td>11.08</td>
+                    <td>-1.08</td>
+                </tr>
+    
+                <tr>
+                    <td>9</td>
+                    <td>18.00</td>
+                    <td>17.11</td>
+                    <td>0.89</td>
+                </tr>
+    
+                <tr>
+                    <td>10</td>
+                    <td>8.00</td>
+                    <td>9.67</td>
+                    <td>-1.67</td>
+                </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

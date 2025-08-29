@@ -1,0 +1,29 @@
+STUDENT PERFORMANCE PREDICTION - RESULTS SUMMARY
+==================================================
+
+Best Model: VotingRegressor
+Best R² Score: 0.8447
+Best RMSE: 1.5713
+
+MODEL PERFORMANCE RANKING:
+------------------------------
+1. GradientBoosting: R² = 0.8477, RMSE = 1.5563
+2. RandomForest: R² = 0.8353, RMSE = 1.6182
+3. Lasso: R² = 0.8319, RMSE = 1.6349
+4. ElasticNet: R² = 0.8313, RMSE = 1.6377
+5. Ridge: R² = 0.8306, RMSE = 1.6414
+6. LinearRegression: R² = 0.8284, RMSE = 1.6518
+7. DecisionTree: R² = 0.8278, RMSE = 1.6549
+8. MLP: R² = 0.8259, RMSE = 1.6637
+9. SVR: R² = 0.8073, RMSE = 1.7505
+10. AdaBoost: R² = 0.7871, RMSE = 1.8401
+11. KNN: R² = 0.6450, RMSE = 2.3759
+
+DATASET INFORMATION:
+--------------------
+Total Samples: 1044
+Number of Features: 70
+Training Samples: 835
+Test Samples: 209
+Target Mean: 11.34
+Target Std: 3.86
