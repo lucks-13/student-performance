@@ -12,8 +12,6 @@ Source.html : [Run on Chrome](https://lucks-13.github.io/student-performance/Sou
 
 results_table.html : [Run on Chrome](https://lucks-13.github.io/student-performance/results_table.html)
 
-dashboard.html : [Run on Chrome](https://lucks-13.github.io/student-performance/dashboard.html)
-
 results_report.html : [Run on Chrome](https://lucks-13.github.io/student-performance/results_report.html)
 
 
@@ -22,6 +20,7 @@ Here is the develoment link : [Run on Google Colab](https://colab.research.googl
 My Journey / My Devlog : [Click Here](https://summer.hackclub.com/projects/12167)
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 
 
 
