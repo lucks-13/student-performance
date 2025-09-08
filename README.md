@@ -8,18 +8,16 @@ Check this video to run all my project:
 
 Here is the Playable link : [Run on Chrome](https://lucks-13.github.io/student-performance/Source.html)
 
-Source.html : [Run on Chrome](https://lucks-13.github.io/student-performance/Source.html)
+Webapp 1 : [Run on Chrome](https://student-performance-prediction-webapp-1.streamlit.app)
 
-results_table.html : [Run on Chrome](https://lucks-13.github.io/student-performance/results_table.html)
-
-results_report.html : [Run on Chrome](https://lucks-13.github.io/student-performance/results_report.html)
-
+Webapp 2 : [Run on Chrome](https://student-performance-prediction-webapp-2.streamlit.app)
 
 Here is the develoment link : [Run on Google Colab](https://colab.research.google.com/github/lucks-13/student-performance/blob/main/code.ipynb)
 
 My Journey / My Devlog : [Click Here](https://summer.hackclub.com/projects/12167)
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 
 
 
